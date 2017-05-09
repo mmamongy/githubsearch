@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
 import { ProfileComponent } from './components/profile.component';
-import { NavbarComponent } from './components/navbar/navbar.component' ;
-
+import { GithubService } from './services/github.service';
 @Component({
   selector: 'my-app',
-  template: `<navbar></navbar>`,
+  template: `<profile></profile>`,
 
 
   
 })
-export class AppComponent  { name = 'Angular'; }
+export class AppComponent  { 
+  constructor(private _githubservice:GithubService){
+
+  }
+ }

@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 
   
 })
-export class NavbarComponent  { name = 'Angular'; }
+export class NavbarComponent  { 
+  private projectname: string; 
+  constructor() {
+    this.projectname = "A2WebSite" ;
+  }
+ }

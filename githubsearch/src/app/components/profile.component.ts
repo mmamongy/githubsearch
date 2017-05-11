@@ -5,11 +5,13 @@ import 'rxjs/add/operator/map';
   moduleId: module.id ,
   selector: 'profile',
   templateUrl: `profile.component.html`,
+  
 })
 export class ProfileComponent  {  
+  user[];
   constructor(private _githubservice: GithubService){
     this._githubservice.getuser().subscribe(user => {
-      console.log(user) ;
+      this.user = user ;
     })
   }
 

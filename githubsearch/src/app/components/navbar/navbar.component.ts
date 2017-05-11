@@ -4,9 +4,6 @@ import { Component } from '@angular/core';
   moduleId: module.id,
   selector: 'navbar',
   templateUrl:'navbar.component.html',
-
-
-  
 })
 export class NavbarComponent  { 
   private projectname: string; 

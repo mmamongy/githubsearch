@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProfileComponent } from './components/profile.component';
 import { GithubService } from './services/github.service';
 import {HttpModule} from '@angular/http';
 @Component({
+  moduleId: module.id,
   selector: 'my-app',
-  template: `<profile></profile>`,
+  templateUrl: `app.component.html`,
   providers: [HttpModule]
   
 })
